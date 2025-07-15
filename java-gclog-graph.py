@@ -11,7 +11,7 @@ import matplotlib.dates as mdates
 import matplotlib.collections as mcollections
 import datetime
 
-app_version = "1.0"
+app_version = "1.1"
 app_homepage = "https://github.com/pes-soft/java-gclog-graph"
 
 def parse_args():
@@ -171,7 +171,6 @@ def plot_data(version, fullgc_heap_used, gc_heap_used, heap_free, starts, output
     plt.xlabel('Time')
     plt.ylabel('Memory (MB)')
     plt.savefig(output_file)
-    plt.show()
     plt.close()
 
 def main():
